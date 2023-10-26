@@ -1,0 +1,123 @@
+:root {
+  --primary-color: #2e7137;
+  --secundary-color: #cac6c6;
+  --tertiary-color: #0a575e;
+  --quaternary-color: #1804f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0px 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--quaternary-color);
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: var(--tertiary-color);
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--tertiary-color);
+}
+
+p {
+  color: var(--tertiary-color);
+  font-size: 1.1rem;
+}
+
+body {
+  width: 1200px;
+  margin: 10px auto;
+  border: 2px solid var(--primary-color);
+}
+
+header {
+  padding: 20px;
+  min-height: 200px;
+  border-bottom: 2px solid var(--primary-color);
+
+  & img {
+    float: left;
+    padding: 25px;
+    height: 150px;
+  }
+}
+
+.Title {
+  float: right;
+}
+
+.siteTitle {
+  font-family: cursive;
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 10px;
+  color: var(--primary-color);
+}
+
+.tagline {
+  font-family: cursive;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 10px;
+  color: var(--primary-color);
+}
+
+main {
+  & img {
+    width: 100%;
+  }
+}
+
+aside {
+  padding: 10px;
+  float: left;
+  width: 33%;
+  & a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    &:hover {
+      color: var(--quaternary-color);
+    }
+  }
+}
+
+ul {
+  line-height: 30px;
+}
+
+.mainContent {
+  padding: 10px;
+  float: right;
+  width: 67%;
+  & a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    &:hover {
+      color: var(--quaternary-color);
+    }
+  }
+}
+
+footer {
+  clear: both;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  padding: 25px 0;
+  & p {
+    color: var(--secundary-color);
+    font-size: 0.9rem;
+  }
+}
